@@ -2,7 +2,6 @@
     "name": "grunt-mongo-drop",
     "version": "0.1.0",
     "description": "Grunt task to drop mongo database",
-    "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
