@@ -11,9 +11,6 @@ Installing
 
     and then "npm install"
 
-    next step is to load it into your gruntfile.js:
-    grunt.loadTasks('grunt-drop-mongodb');
-
     specify options grunt.initConfig:
     'mongo-drop': {
                 options: {
