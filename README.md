@@ -6,10 +6,7 @@ Grunt task to drop database
 Installing
 -----------------
 
-    add line with repository to package.json:
-    "grunt-mongo-drop": "git+https://github.com/IOKI/grunt-mongo-drop.git"
-
-    and then "npm install"
+    npm install grunt-mongo-drop-task
 
     specify options grunt.initConfig:
     'mongo-drop': {
