@@ -24,13 +24,13 @@ module.exports = function (grunt) {
 
         grunt.verbose.writeln('dropping: ' + options.databases[i].dbname);
 
-        db = mongoose.connect('mongodb://' + options.databases[i].host + '/' + options.databases[i].dbname, function (err) {
+        var connection = mongoose.createConnection('mongodb://' + options.databases[i].host + '/' + options.databases[i].dbname, function (err) {
           if (err) {
             grunt.log.writeln('Could not connect to mongodb, check if mongo is running');
             done(err);
           } else {
             grunt.log.writeln('Open db connection');
-            db.connection.db.dropDatabase(function (err) {
+            connection.db.dropDatabase(function (err) {
               if (err) {
                 grunt.log.writeln('Could not drop database');
                 done(err);

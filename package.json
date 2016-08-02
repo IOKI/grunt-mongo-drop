@@ -1,24 +1,27 @@
 {
-    "name": "grunt-mongo-drop-task",
-    "version": "0.1.0",
-    "description": "Grunt task to drop mongo database",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/IOKI/grunt-mongo-drop.git"
-    },
-    "keywords": [
-        "Pearson",
-        "Mongo",
-        "Drop",
-        "Grunt"
-    ],
-    "author": "Filip Madejek <filip.madejek@pearson.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/IOKI/grunt-mongo-drop/issues"
-    },
-    "homepage": "https://github.com/IOKI/grunt-mongo-drop"
+  "name": "grunt-mongo-drop-task",
+  "version": "0.1.0",
+  "description": "Grunt task to drop mongo database",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IOKI/grunt-mongo-drop.git"
+  },
+  "keywords": [
+    "Pearson",
+    "Mongo",
+    "Drop",
+    "Grunt"
+  ],
+  "author": "Filip Madejek <filip.madejek@pearson.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IOKI/grunt-mongo-drop/issues"
+  },
+  "homepage": "https://github.com/IOKI/grunt-mongo-drop",
+  "dependencies": {
+    "mongoose": "4.5.8"
+  }
 }
