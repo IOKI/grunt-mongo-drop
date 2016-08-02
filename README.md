@@ -9,12 +9,19 @@ Installing
     npm install grunt-mongo-drop-task
 
     specify options grunt.initConfig:
-    'mongo-drop': {
-                options: {
-                    dbname: 'mean-dev',
+
+        'mongo-drop': {
+            options: {
+                databases: [{
+                    dbname: 'database1',
                     host: 'localhost'
-                }
+                },
+                {
+                    dbname: 'database2',
+                    host: 'localhost'
+                }]
             }
+        }
 
     and then you can use it e.g. grunt.registerTask('drop', ['mongo-drop']);
 
@@ -22,5 +29,7 @@ Installing
 Options with default values
 -----------------
 
-     dbname: null
-     host: 'localhost'
+    databases: [{
+        dbname: null,
+        host: 'localhost'
+    }]
