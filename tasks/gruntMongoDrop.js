@@ -18,6 +18,7 @@ module.exports = function (grunt) {
 
     grunt.verbose.writeflags(options, 'Options');
 
+    var closedCount = 0;
     for (var i = 0; i < options.databases.length; i++) {
 
       if (options.databases[i].dbname !== null) {
@@ -36,7 +37,11 @@ module.exports = function (grunt) {
                 done(err);
               } else {
                 grunt.log.writeln('Database dropped');
-                done();
+                
+                ++closedCount;
+                if (closedCount === options.databases.length) {
+                    done();
+                }
               }
             });
           }
